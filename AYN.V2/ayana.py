@@ -238,8 +238,8 @@ autoinvite = []
 autoleaveroom = []
 targets = []
 Bots=[mid,Amid,Bmid,Cmid,Dmid,Emid]
-admin = ["u832d6b22ecdb23a673a2ae6a8784f714"]
-owner = ["u832d6b22ecdb23a673a2ae6a8784f714"]
+admin = ["u9ff9724c8de470b9a649b5154ec5d5aa"]
+owner = ["u9ff9724c8de470b9a649b5154ec5d5aa"]
 wait = {
     'contact':False,
     'autoJoin':True,
@@ -1491,7 +1491,7 @@ def bot(op):
                 kc.like(url[25:58], url[66:], likeType=1001)
                 kt.like(url[25:58], url[66:], likeType=1001)
                 ks.like(url[25:58], url[66:], likeType=1001)
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
                if wait["wblack"] == True:
@@ -1574,7 +1574,7 @@ def bot(op):
                     cl.sendText(msg.to,"It can't be used besides the group.")
             
 
-        if op.type == 26:
+        if op.type == 25:
             msg = op.message
             if msg.contentType == 13:
             	if wait["winvite"] == True:
